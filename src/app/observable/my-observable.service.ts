@@ -21,7 +21,7 @@ export class MyObservableService {
 
 	private myLogic(): void {
 		setTimeout(() => {
-			let numberTemp = Math.floor(Math.random() * 100) + 1;
+			let numberTemp: number = Math.floor(Math.random() * 100) + 1;
 
 			this.listNumber.push(numberTemp);
 

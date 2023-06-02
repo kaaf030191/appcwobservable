@@ -1,3 +1,13 @@
-<div style="background-color: #cccccc;display: inline-block;vertical-align: top;width: 200px;">
-	como-two
+<div style="background-color: #f5f5f5;display: inline-block;vertical-align: top;width: 200px;">
+	<div style="text-align: center;">
+		<button type="button" (click)="xSuscribe()" [disabled]="mySubscription != null">Suscribirme</button>
+		<button type="button" (click)="xUnsuscribe()" [disabled]="mySubscription == null">Desuscribirme</button>
+	</div>
+	<div>
+		<ul>
+			<li *ngFor="let item of myObservableResponse">
+				{{item}}
+			</li>
+		</ul>
+	</div>
 </div>
